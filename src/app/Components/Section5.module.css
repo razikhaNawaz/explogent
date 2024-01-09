@@ -1,0 +1,61 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .child1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+  }
+  
+  .child2 {
+    /* border:1px solid red; */
+    height: auto;
+    width: 100%; /* Adjust width for mobile */
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+    margin-left: 0; /* Remove margin for mobile */
+  }
+  
+  .child2 .child21,
+  .child2 .child22 {
+    /* border:1px solid red; */
+    height: auto;
+    width: 100%; /* Adjust width for mobile */
+    margin-left: 0; /* Remove margin for mobile */
+  }
+  
+  .child21,
+  .child22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 0; /* Remove margin for mobile */
+    gap: 2rem;
+  }
+  
+  .child21 h4,
+  .child22 h4 {
+    color: blue;
+  }
+  
+  @media (min-width: 768px) {
+    /* Apply styles only for screens with a minimum width of 768px (tablets and larger) */
+    .child2 {
+      flex-direction: row;
+    }
+  
+    .child2 .child21,
+    .child2 .child22 {
+      width: 50%; /* Adjust width for larger screens */
+      margin-left: 2rem;
+    }
+  }
+  

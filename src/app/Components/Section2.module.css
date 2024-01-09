@@ -1,0 +1,53 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height: auto; /* Change to auto to allow height to adjust based on content */
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .ch3 {
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    gap: 1rem;
+    align-items: center; /* Center buttons horizontally */
+  }
+  
+  .ch3 button {
+    border: 1px solid blue; /* Change to border to have a solid border */
+    width: 80%; /* Adjust width for mobile */
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem; /* Add margin bottom for spacing between buttons */
+    border-radius: 1rem;
+  }
+  
+  .ch3 button h4 {
+    color: blue;
+  }
+  .ch1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+  }
+  
+  @media (min-width: 768px) {
+    /* Apply styles only for screens with a minimum width of 768px (tablets and larger) */
+    .ch3 {
+      flex-direction: row;
+    }
+  
+    .ch3 button {
+      width: 10rem;
+      margin-bottom: 0;
+      gap:0 /* Remove margin bottom for larger screens */
+    }
+  }
+  

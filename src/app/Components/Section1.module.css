@@ -1,0 +1,30 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height:16rem;
+   justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.but{
+    
+    gap:1rem;
+}
+.but button{
+    width:10rem;
+    height:2rem;
+    border-radius: 2rem;
+    gap:3rem;
+    color:blue;
+    background-color: beige;
+    margin-left: 2rem;
+    border:2px solid blue;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+}

@@ -1,0 +1,67 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height: auto; /* Change to auto to allow height to adjust based on content */
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .ch1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+  }
+  
+  .ch3 {
+    display: flex;
+    flex-direction: column; /* Change to column for mobile */
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 2rem;
+  }
+  
+  .ch31,
+  .ch32,
+  .ch33 {
+    width: 80vw; /* Adjust width for mobile */
+    border-radius: 1rem;
+  }
+  
+  .ch3 button {
+    border: 1px solid blue; /* Change to border to have a solid border */
+    width: 100%; /* Adjust width for mobile */
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem; /* Add margin bottom for spacing between buttons */
+    border-radius: 1rem;
+  }
+  
+  .ch3 button h4 {
+    color: blue;
+  }
+  
+  .ch3 p {
+    font-size: small; /* Adjust font size for mobile */
+  }
+  
+  @media (min-width: 768px) {
+    /* Apply styles only for screens with a minimum width of 768px (tablets and larger) */
+    .ch3 {
+      flex-direction: row;
+    }
+  
+    .ch31,
+    .ch32,
+    .ch33 {
+      width: 20rem;
+    }
+  }
+  

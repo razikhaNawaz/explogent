@@ -1,0 +1,41 @@
+.parent{
+display: flex;
+flex-direction: row;
+
+
+}
+.ch1{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.head{
+    color: blue;
+    
+}
+.para{
+    font-size: medium;
+    font-style: inherit
+}
+.ch2 {
+    order: 1; /* Set initial order to 1 */
+  }
+  
+  @media (max-width: 768px) {
+    .parent {
+      flex-direction: column-reverse; /* Change to column layout on smaller screens, and reverse the order */
+    }
+  
+    .ch1 {
+        margin-top: 2rem;
+        margin-left: 0; /* Adjust as needed */
+        align-items: center;
+        font-size: small;
+      }
+    .ch2 {
+        order: 0;
+        max-width: none; /* Reset max-width for smaller screens */
+      }
+  }
